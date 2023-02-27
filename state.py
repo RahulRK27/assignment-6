@@ -1,6 +1,6 @@
 import json
 
-state_capitals = {
+Dictionary = {
     'Andhra Pradesh': 'Hyderabad',
     'Gujarat': 'Gandhinagar',
     'Karnataka': 'Bengaluru',
@@ -10,6 +10,9 @@ state_capitals = {
     'West Bengal': 'Kolkata'
 }
 
+print(Dictionary)
+with open("state_capital.json","w") as f:
+     json.dump(Dictionary,f)
 
-with open('D:\\vaishali\\python\\assignments\\assignment_6\\state_and_capital.json', 'w') as file:
-    json.dump(state_capitals,file)
+
+    
